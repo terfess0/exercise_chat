@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost'; // Cambia esto si tu base de datos está en otro servidor
-$dbname = 'chat_app'; // Nombre de tu base de datos
-$username = 'root'; // Tu nombre de usuario de la base de datos
-$password = ''; // Tu contraseña de la base de datos
+$host = '162.241.60.182'; // Cambia esto si tu base de datos está en otro servidor
+$dbname = 'colminds_chat_example'; // Nombre de tu base de datos
+$username = 'colminds_student'; // Tu nombre de usuario de la base de datos
+$password = 'Estudent22.'; // Tu contraseña de la base de datos
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
