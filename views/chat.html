@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/main.js" defer></script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto p-4">
+        <div class="flex justify-between items-center mb-4">
+            <h1 class="text-2xl font-bold">Chat Application</h1>
+            <button id="logout" class="bg-red-500 text-white px-4 py-2 rounded">Logout</button>
+        </div>
+
+        <div class="flex">
+            <div class="w-1/4 bg-white p-4 rounded shadow">
+                <h2 class="text-xl font-semibold mb-2">Users</h2>
+                <input type="text" id="searchUser" placeholder="Search users..." class="border p-2 w-full mb-4 rounded">
+                <ul id="userList" class="list-none">
+                    <!-- User list will be populated here -->
+                </ul>
+            </div>
+
+            <div class="w-3/4 bg-white p-4 rounded shadow ml-4">
+                <h2 class="text-xl font-semibold mb-2">Chat</h2>
+                <div id="chatWindow" class="h-64 overflow-y-auto border p-2 mb-4 rounded">
+                    <!-- Chat messages will be displayed here -->
+                </div>
+                <textarea id="messageInput" placeholder="Type your message..." class="border p-2 w-full rounded"></textarea>
+                <button id="sendMessage" class="bg-blue-500 text-white px-4 py-2 rounded mt-2">Send</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
